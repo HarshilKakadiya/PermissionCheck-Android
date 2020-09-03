@@ -18,7 +18,7 @@ And add this to your module's `build.gradle`
 
 ```groovy
 dependencies {
-	implementation 'com.github.HarshilKakadiya:PermissionCheck-Android:1.0'
+	implementation 'com.github.HarshilKakadiya:PermissionCheck-Android:1.1'
 }
 ```
 
