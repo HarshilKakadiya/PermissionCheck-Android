@@ -1,0 +1,3 @@
+include ':permissioncheck'
+include ':app'
+rootProject.name = "PermissionCheckExample"
