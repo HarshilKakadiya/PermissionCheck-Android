@@ -1,6 +1,7 @@
 # PermissionCheck-Android
 This library is used to ask permission from user in short way. This project has been written in Kotlin language.
 
+## Using `build.gradle`
 
 Add this to your project's `build.gradle`
 
@@ -22,6 +23,29 @@ dependencies {
 ```
 
 
+## Using `maven`
+
+Step 1 :
+
+```groovy
+<repositories>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
+Step 2 : Add dependency
+
+```groovy
+<dependency>
+	<groupId>com.github.HarshilKakadiya</groupId>
+	<artifactId>PermissionCheck-Android</artifactId>
+	<version>1.0</version>
+</dependency>
+```
+
 ## Usage
 
 Full example?, please refer to `app` module
@@ -29,7 +53,7 @@ Full example?, please refer to `app` module
 
 ### To start for ask permission
 
-### Kotlin
+## Kotlin
 
 ```java
 PermissionCheck.with(this@MainActivity)
@@ -66,7 +90,7 @@ PermissionCheck.with(this@MainActivity)
 ```
 
 
-### Java
+## Java
 
 ```java
 PermissionCheck.with(MainActivity.this)
