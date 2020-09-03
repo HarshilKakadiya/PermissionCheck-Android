@@ -71,7 +71,7 @@ class PermissionCheckActivity : AppCompatActivity() {
                         ?.onResult(refusedPermissions)
                     askAgainPermissions.isNotEmpty() && !isSkipDenyAndForceDeny -> deniedCallback?.get()
                         ?.onResult(askAgainPermissions)
-                    acceptedPermissions.isNotEmpty() -> acceptedCallback?.get()
+                    acceptedPermissions.isNotEmpty() || isSkipDenyAndForceDeny -> acceptedCallback?.get()
                         ?.onResult(acceptedPermissions)
                 }
                 finish()
